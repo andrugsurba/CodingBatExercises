@@ -10,6 +10,16 @@ def front_times(str, n):
     return front*n
     
 def string_bits(str):
+#Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+    bit=""
+    for i in range(len(str)):
+        if i%2==0:
+            bit+=str[i]
+    return bit
+
+#OR
+
+def string_bits(str):
 #Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo". 
     return str[::2] 
 
